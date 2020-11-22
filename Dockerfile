@@ -20,3 +20,6 @@ RUN chmod +x /usr/internet/install.sh
 EXPOSE 8888
 
 CMD ["bash", "/usr/internet/install.sh"]
+
+
+
