@@ -2,7 +2,7 @@ app = "fragrant-meadow-2383"
 
 
 [[services]]
-  internal_port = 3001
+  internal_port = 8888
   protocol = "tcp"
 
   [services.concurrency]
