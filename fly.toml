@@ -15,7 +15,7 @@ app = "denn-xnfb6"
 
   [[services.ports]]
     handlers = ["tls", "http"]
-    port = "443"
+    port = 443
 
   [[services.tcp_checks]]
     interval = 10000
