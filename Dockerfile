@@ -9,6 +9,9 @@ FROM ubuntu:14.04
 RUN apt-get -qq update && \
     apt-get install -q -y git curl unzip wget daemon
 
+#同步系统时间
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 # run install script
 RUN mkdir -p /usr/internet/
 
