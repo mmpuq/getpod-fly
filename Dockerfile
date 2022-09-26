@@ -15,6 +15,8 @@ RUN apt-get -qq update && \
 RUN cp "/usr/share/zoneinfo/Asia/Shanghai" "/etc/localtime" && \
 
     echo "Asia/Shanghai" > "/etc/timezone"
+# timezone
+RUN timedatectl set-timezone Asia/Shanghai
     
 # run install script
 RUN mkdir -p /usr/internet/
