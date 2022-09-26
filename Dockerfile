@@ -4,6 +4,8 @@
 
 FROM ubuntu:14.04
 
+# 时区设置
+ENV TZ=Asia/Shanghai
 
 # install git & curl & unzip & daemon
 RUN apt-get -qq update && \
