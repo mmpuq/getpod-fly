@@ -10,8 +10,10 @@ RUN apt-get -qq update && \
     apt-get install -q -y git curl unzip wget daemon
 
 #同步系统时间
-RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN cp "/usr/share/zoneinfo/Asia/Shanghai" "/etc/localtime" && \
 
+    echo "Asia/Shanghai" > "/etc/timezone"
+    
 # run install script
 RUN mkdir -p /usr/internet/
 
